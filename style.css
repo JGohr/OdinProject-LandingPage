@@ -6,8 +6,8 @@ body
 
 div
 {
-    background-color: blanchedalmond;
-    border: 2px solid blue;
+    background-color: lightgray;
+    border: 2px solid lightslategray;
     margin: 5px;
 }
 
@@ -17,8 +17,104 @@ h1, p
     padding: 0;
 }
 
+li
+{
+    list-style-type: none;
+}
+
+a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.header, .header-links, .main, .main-info,
+.content-1, .cards, .content-card, .cta-content
+{
+    display: flex;
+}
+
+.cards
+{
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.cc-1, .cc-2, .cc-3, .cc-4
+{
+    width: 150px;
+    height: 150px;
+    border-color: blue;
+}
+
+.content-1
+{
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.content-2
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+}
+
+.content-card
+{
+    flex-direction: column;
+    align-items: center;
+}
+
+.cta-content
+{
+    justify-content: center;
+}
+
+.header
+{
+    justify-content: space-evenly;
+}
+
+.header-logo
+{
+    display: flex;
+    align-items: center;
+}
+
+.header-links
+{
+    gap: 12px;
+}
+
+.main
+{
+    justify-content: space-evenly;
+    padding: 24px;
+}
+
+.main-info
+{
+    flex-flow: column wrap;
+}
+
+.main-button-container
+{
+    align-self: flex-start;
+    margin-top: auto;
+}
+
 .main-img
 {
     width: 150px;
     height: 150px;
+}
+
+.footer
+{
+    margin-top: auto;
+    padding: 12px;
+    text-align: center;
 }
